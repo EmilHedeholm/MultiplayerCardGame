@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    <h1 style=" text-align:center" >NiceGameName</h1>
+    <div>
+        <h3 style="float:left; width: 33%;">Find a game table to join </h3>
+        <h3 style="float: right; width: 33%; text-align:right"> Create your own game table</h3>
+        <h3 style="float: right; width: 33%; text-align:center"> or </h3>
+    </div>
+</div>
+<div>
+    @*<button type="button" style="float:left; width: 20%; background-color:lawngreen"> Find game table</button>
+        <button style="float:right; width: 20%; background-color:lawngreen"> Create game table </button>*@
+    <input type="button" style="float:left; width: 20%; background-color:lawngreen" value="Find Game Table" onclick="location.href='@Url.Action("Index","Table")'" />
+    <input type="button" style="float:right; width: 20%; background-color:lawngreen" value="Create Your own game table" onclick="location.href='@Url.Action("Create","Table")'" />
+</div>
+
